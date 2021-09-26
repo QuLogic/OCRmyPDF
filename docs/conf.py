@@ -99,7 +99,7 @@ if on_rtd:
 
 
 # The full version, including alpha/beta/rc tags.
-release = package_version('ocrmypdf')
+release = os.environ.get('OCRMYPDF_VERSION')
 version = '.'.join(release.split('.')[:2])
 
 
